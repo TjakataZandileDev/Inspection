@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Final Inspection Report</title>
+  <link rel="stylesheet" href="styles/inspect.css" />
+</head>
+<body>
+
+  <div class="header-container">
+    <img src="pics/logo.PNG" alt="Logo" class="logo" />
+    <div class="title">FINAL INSPECTION REPORT</div>
+    <div class="audit">
+      <label for="auditType">Audit:</label>
+      <select id="auditType">
+        <option value="internal">Internal</option>
+        <option value="external">External</option>
+      </select>
+    </div>
+  </div>
+
+  <table class="inspection-table">
+    <tr>
+      <td>
+        <label for="factoryDropdown">Factory:</label>
+        <select id="factoryDropdown">
+          <option value="">--Select--</option>
+          <option value="L7">L7</option>
+          <option value="L9">L9</option>
+          <option value="F28">F28</option>
+          <option value="F29">F29</option>
+          <option value="F30">F30</option>
+          <option value="F31">F31</option>
+          <option value="F25">F25</option>
+          <option value="F8">F8</option>
+        </select>
+        <label for="lineDropdown">Line:</label>
+        <select id="lineDropdown">
+          <option value="">--Select--</option>
+        </select>
+      </td>
+      <td><label for="orderQty">Order Qty:</label><input type="text" id="orderQty" /></td>
+      <td><label for="aql">AQL 2.5:</label><input type="text" id="aql" /></td>
+      <td><label for="auditDate">Audit Date:</label><input type="date" id="auditDate" /></td>
+    </tr>
+    <tr>
+      <td><label for="cutNumber">Cut #:</label><input type="text" id="cutNumber" /></td>
+      <td><label for="packedQty">Packed Qty:</label><input type="text" id="packedQty" /></td>
+      <td><label for="sampleSize">Sample Size:</label><input type="text" id="sampleSize" /></td>
+      <td><label for="auditor">Auditor:</label><input type="text" id="auditor" /></td>
+    </tr>
+    <tr>
+      <td><label for="styleNumber">Style #:</label><input type="text" id="styleNumber" /></td>
+      <td><label for="auditNo">Audit No:</label>
+        <select id="auditNo">
+          <option value="final">Final</option>
+          <option value="reaudit">Re-Audit</option>
+        </select>
+      </td>
+      <td><label for="defectsFound">Defects Found:</label><input type="text" id="defectsFound" /></td>
+      <td><label for="results">Results:</label>
+        <select id="results">
+          <option value="pass">Pass</option>
+          <option value="fail">Fail</option>
+          <option value="pending">Pending</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="patternNumber">Pattern No.:</label><input type="text" id="patternNumber" /></td>
+      <td><label for="gmtDescription">GMT Descrip.:</label><input type="text" id="gmtDescription" /></td>
+      <td><label for="noOfBoxes">No. of Boxes:</label><input type="text" id="noOfBoxes" /></td>
+      <td><label for="rating">Rating:</label>
+        <select id="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  <div class="section-title">Defects: by Category - SEWING</div>
+
+  <table class="defects-table">
+    <tr>
+      <td><label>Wrong Size Label</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Skipped</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Raw Edge</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Fallen Stitch</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Needle Damage</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+    <tr>
+      <td><label>Puckering</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Fullness</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Broken Stitch</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Pleat</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Hi & Low</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+    <tr>
+      <td><label>Missing Side Winder</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Buttonholes Damage</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Loose Tension</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Skew Pocket</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Skew Print</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+    <tr>
+      <td><label>Others</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Twisted leg/side seam</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Loop Missing</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Rivet Missing/Damaged</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Wrong Construction</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+    <tr>
+      <td><label>Missing Bar Tack</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Incorrect Velcro</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Threads Untrimmed</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Over-run</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Extra</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+  </table>
+
+  <div class="section-title">Defects: by Category - MEASUREMENTS & FABRIC</div>
+  <table class="defects-table">
+    <tr>
+      <td><label>Plus</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Minus</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Fabric Flaws</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Fabric Stain</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Fabric Holes</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+  </table>
+
+  <div class="section-title">Defects: by Category - FINISHING</div>
+
+  <table class="defects-table">
+    <tr>
+      <td><label>Stain</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Poor Presentation</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Out of Shade Range</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Wrong Label Content</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Dirty Marks/Oil stain</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+    <tr>
+      <td><label>Loose Threads</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Hole/Reject GMT</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Incorrect Button</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Skew Print</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Skew Embroidery</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr> 
+  </table>
+  <div class="section-title">Defects: by Category - PACKING</div>
+  <table class="defects-table">
+    <tr>
+      <td><label>Incorrect Swing Tack</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Missing Swing Tag</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Incorrect Bar Code size on ST</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Incorrect Pack Qty</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Folding Presentation</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+    <tr>
+      <td><label>Incorrect Barcode on Poly Bag</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Incorrect size on cartoon</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label>Incorrect RFID size</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+    </tr>
+  </table>
+
+  <div class="section-title">ACCURACY INFORMATION</div>
+  <table class="defects-table">
+    <tr>
+      <td><label for="cutNumber">Cartoons Sampled:</label><input type="text" id="cutNumber" /></td>
+      <td><label>Cartoons in Error</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label for="cutNumber">Units Sampled:</label><input type="text" id="cutNumber" /></td>
+      <td><label>Units in Error</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label for="cutNumber">Total rejects</label><input type="text" id="cutNumber" /></td>
+      <td><label>Shortages</label><div class="counter"><button onclick="decrement(this)">&#x25B2;</button><span>0</span><button onclick="increment(this)">&#x25BC;</button></div></td>
+      <td><label for="cutNumber">Wrong Sizes</label><input type="text" id="cutNumber" /></td>
+    </tr>
+  </table>
+
+  <div class="remark-container">
+    <div class="remark-label">Remarks</div>
+    <textarea class="remark-textarea" rows="5" placeholder=""></textarea>
+  </div>
+
+  <button id="submitBtn" class="submit-btn">Submit</button>
+
+  <script src="scripts/inspection.js"></script>
+</body>
+</html> 

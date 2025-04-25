@@ -1,0 +1,37 @@
+
+    <div className="p-4 max-w-7xl mx-auto text-sm">
+   
+      <div className="flex justify-between items-center mb-4">
+        <img src="pics/logo.PNG" alt="Logo" className="w-12 h-12 object-contain" />
+
+        <h1 className="text-xl font-bold text-center flex-1 -ml-12">FINAL INSPECTION REPORT</h1>
+
+        <div className="flex items-center space-x-2">
+          <label htmlFor="auditType" className="font-semibold">Audit:</label>
+          <select id="auditType" className="border px-2 py-1 rounded">
+            <option value="internal">Internal</option>
+            <option value="external">External</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Table */}
+      <table className="w-full table-fixed border border-gray-300">
+        <tbody>
+          {[...Array(4)].map((_, rowIndex) => (
+            <tr key={rowIndex}>
+              {[...Array(8)].map((_, colIndex) => (
+                <td
+                  key={colIndex}
+                  className="border border-gray-300 p-2 text-center"
+                >
+                  Row {rowIndex + 1} Col {colIndex + 1}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
